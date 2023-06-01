@@ -46,7 +46,7 @@ THIRD_APPS = [
 
 ]
 LOCAL_APPS = [
-    'nameApp.apps.NameappConfig',
+    'print_PDF',
 ]
 
 INSTALLED_APPS = THIRD_APPS + DJANGO_APPS  + LOCAL_APPS
