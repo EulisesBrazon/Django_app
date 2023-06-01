@@ -45,7 +45,11 @@ DJANGO_APPS = [
 THIRD_APPS = [
 
 ]
+
+#app borrada 'nameApp.apps.NameappConfig',
+
 LOCAL_APPS = [
+    'proyecto_djangoApp',
     'print_PDF',
 ]
 
@@ -88,7 +92,7 @@ WSGI_APPLICATION = 'proyecto_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'pruebadjango',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
