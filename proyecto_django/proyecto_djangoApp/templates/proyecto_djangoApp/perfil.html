@@ -1,0 +1,28 @@
+{% extends "proyecto_djangoApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Page content-->
+<div class="container-fluid">
+
+    {% if request.user.is_authenticated %}
+    
+        <h1 class="mt-4">Perfil de usuario</h1>
+        <h3>id:</h3>
+        <p>{{ id }}</p>
+        <h3>nombre:</h3>
+        <p>{{ nombre }}</p>
+        <h3>email:</h3>
+        <p>{{ email }}</p>
+
+    {% else %}
+
+    <h1 class="mt-4">Usuario no esta autenticado</h1>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}
