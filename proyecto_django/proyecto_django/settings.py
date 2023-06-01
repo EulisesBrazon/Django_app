@@ -45,8 +45,11 @@ DJANGO_APPS = [
 THIRD_APPS = [
 
 ]
+
+#app borrada 'nameApp.apps.NameappConfig',
+
 LOCAL_APPS = [
-    'nameApp.apps.NameappConfig',
+    'proyecto_djangoApp',
 ]
 
 INSTALLED_APPS = THIRD_APPS + DJANGO_APPS  + LOCAL_APPS
