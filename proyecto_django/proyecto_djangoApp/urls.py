@@ -21,6 +21,6 @@ from proyecto_djangoApp import views
 
 urlpatterns = [
     path('', views.home, name="Home"),
-    path('servicios/', views.servicios, name="Servicios"),
-    path('contacto/', views.contacto, name="Contacto"),
+    path('perfil/', views.perfil, name="Perfil"),
+    path('informacion/', views.informacion, name="Informacion"),
 ]
