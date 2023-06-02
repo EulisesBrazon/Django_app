@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
@@ -14,6 +14,7 @@ def home(request):
         user_name = "Anonymous"
         return render(request, "proyecto_djangoApp/home.html", {'nombre': user_name})
 
+
 def perfil(request):
 
     if request.user.is_authenticated:
@@ -27,6 +28,7 @@ def perfil(request):
     else:
         # Do something for anonymous users.
         return render(request, "proyecto_djangoApp/perfil.html")
+
 
 def informacion(request):
     return render(request, "proyecto_djangoApp/informacion.html")
